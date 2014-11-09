@@ -97,7 +97,7 @@ NSString *const AJSITunesAttributeTvSeasonTerm = @"tvSeasonTerm";
 
 - (NSString *)trackURLString
 {
-    return _trackURLString;
+    return _trackViewURLString;
 }
 
 #pragma mark - JSON Serialization
