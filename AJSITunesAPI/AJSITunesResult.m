@@ -71,6 +71,7 @@ NSString *const AJSITunesAttributeTvSeasonTerm = @"tvSeasonTerm";
 
 @interface AJSITunesResult()
 @property (nonatomic, strong) NSString *imageURLString;
+@property (nonatomic, strong) NSString *trackViewURLString;
 @end
 
 @implementation AJSITunesResult
@@ -94,6 +95,11 @@ NSString *const AJSITunesAttributeTvSeasonTerm = @"tvSeasonTerm";
     return [NSURL URLWithString:self.imageURLString];
 }
 
+- (NSString *)trackURLString
+{
+    return _trackURLString;
+}
+
 #pragma mark - JSON Serialization
 
 + (NSDictionary *)JSONKeyPathsByPropertyKey
@@ -110,6 +116,7 @@ NSString *const AJSITunesAttributeTvSeasonTerm = @"tvSeasonTerm";
               @"itemDescription" : @"longDescription",
               @"previewURL" : @"previewUrl",
               @"viewURL" : @"trackViewUrl",
+              @"trackViewURLString" : @"trackViewUrl",
               @"duration" : @"trackTimeMillis",
               @"releaseDate" : @"releaseDate",
               @"imageURLString" : @"artworkUrl100",
