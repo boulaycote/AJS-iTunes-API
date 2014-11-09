@@ -92,6 +92,7 @@ extern NSString *const AJSITunesAttributeTvSeasonTerm;
 @property (nonatomic, strong, readonly) NSURL *imageURL;
 @property (nonatomic, strong, readonly) NSURL *thumnailImageURL;
 @property (nonatomic, strong, readonly) NSURL *previewURL;
+@property (nonatomic, strong, readonly) NSString *trackViewURLString;
 @property (nonatomic, strong, readonly) NSURL *viewURL;
 
 //Collection name: usually the album name (music)

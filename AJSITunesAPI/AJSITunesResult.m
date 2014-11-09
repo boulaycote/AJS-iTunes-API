@@ -95,7 +95,7 @@ NSString *const AJSITunesAttributeTvSeasonTerm = @"tvSeasonTerm";
     return [NSURL URLWithString:self.imageURLString];
 }
 
-- (NSString *)trackURLString
+- (NSString *)trackViewURLString
 {
     return _trackViewURLString;
 }
